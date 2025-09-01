@@ -1,0 +1,120 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    background-color: #f0f0f0;
+    margin: 0;
+
+    padding: 20px;/*fix center kt sini*/
+}
+
+.quiz-container 
+{
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 
+{
+    margin-bottom: 20px;
+}
+
+.option 
+{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;}
+
+.text-input 
+{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: lightgrey;
+  width: 40%;
+  font-size: 16px;
+}
+
+.text-input-question
+{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: lightgrey;
+  width: 40%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.text-input-explanation
+{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: lightgrey;
+  width: 80%;
+  font-size: 16px;
+}
+
+.explanation 
+{
+    margin-top: 20px;
+    background-color: #e7f3fe;
+    border-left: 6px solid #2196F3;
+    padding: 10px;
+}
+
+textarea
+{
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 40%;
+  font-size: 16px;
+  resize: none;
+}
+
+button 
+{
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button-row 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+.left-buttons 
+{
+  display: flex;
+  gap: 10px; /* space between the first two buttons */
+}
+
+.right-buttons 
+{
+  display: flex;
+  gap: 10px; /* space between the first two buttons */
+}
+
+button:hover 
+{
+    background-color: #1976D2;
+}

@@ -1,0 +1,182 @@
+:root {
+    --primary: #00c3e3;
+    --primary-dark: #00a9c7;
+    --primary-light: #80e1f1;
+    --white: #ffffff;
+    --dark: #2b2d42;
+    --light: #f8f9fa;
+    --border-radius: 8px;
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .back-btn a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 500;
+    transition: var(--transition);
+  }
+
+  .back-btn a:hover {
+    color: var(--primary);
+  }
+
+  .back-btn svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  .container {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    width: 100%;
+    max-width: 420px;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
+  }
+
+  h2 {
+    margin-bottom: 25px;
+    color: var(--dark);
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    transition: var(--transition);
+    background-color: var(--light);
+  }
+
+  input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(0, 195, 227, 0.2);
+  }
+
+  .radio-group {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--dark);
+    transition: var(--transition);
+  }
+
+  .radio-group label:hover {
+    color: var(--primary);
+  }
+
+  input[type="radio"] {
+    accent-color: var(--primary);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  button[type="submit"] {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
+  }
+
+  button[type="submit"]:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+  }
+
+  .signUp-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+  }
+
+  .signUp-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+
+  .signUp-link a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    .radio-group {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }

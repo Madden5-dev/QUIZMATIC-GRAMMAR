@@ -1,0 +1,123 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    font-size: larger;
+    background-image: url('CSC264ISP2501.avif') ;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a 
+{
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav .active 
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.logout  
+{
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.user-info 
+{
+    display: flex;
+    gap: 20px;
+    padding-top: 50px;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.info-quiz, .info-user 
+{
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    font-size: large;
+    width: calc(50%-10); /* for the box same size*/
+    box-sizing: border-box;
+}
+
+.container-Quizzes
+{
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: auto;
+    max-width: 900px;
+    width: 100%;
+    margin: 20px auto 0 auto;
+    box-sizing: border-box;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td 
+{
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th 
+{
+    background-color: #f8f9fa;
+}
+
+button 
+{
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    padding: 8px 12px;/*topbottom left right */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.view-btn 
+{
+    background-color: #00f7ff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.three-btn {
+    display: flex;
+    justify-content: flex-end; /* aligns all buttons to the left */
+    align-items: center;
+    gap: 10px; /* optional: adds spacing between buttons */
+}
+
